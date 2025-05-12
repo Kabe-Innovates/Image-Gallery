@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fav</title>
+    <link rel="stylesheet" href="Gallery.css">
+</head>
+<body>
+    <h1>Hall of Champions</h1>
+
+    <div class="gallery" onclick="openLightbox(event)">
+        <img src="Images/Thalaivar.png"
+            alt="Thalaivar">
+        <img src="Images/Thala.png"
+            alt="Thala">
+        <img src="Images/king.png"
+            alt="APJ">
+        <img src="Images/Kabe.jpeg"
+            alt="Kabe">
+    </div>
+
+    <div id="lightbox">
+        <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+        <img id="lightbox-img" src="" alt="lightbox image">
+
+        <div id="thumbnail-container">
+            <!-- Thumbnails will be added dynamically using JavaScript -->
+        </div>
+        <button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
+        <button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
+    </div>
+    <script src="Gallery.js"></script>
+
+</body>
+</html>
